@@ -1,0 +1,20 @@
+{
+  "name": "BarterPlace",
+  "version": "1.0.0",
+  "description": "A simple mock up of a bartering based marketplace application.",
+  "main": "app.js",
+  "scripts": {
+    "main": "app.js"
+  },
+  "keywords": [],
+  "author": "Miley Thompson",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1"
+  }
+}

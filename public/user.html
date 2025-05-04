@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css">
+    <title>BarterPlace-create</title>
+</head>
+<body>
+    <!--navbar-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="create-user.html">Create Account</a></li>
+        <li><a href="login.html">Login to Account</a></li>
+        <li><a href="create.html">Create a post</a></li>
+        <li><a href="view.html">View Posts</a></li>
+        <li><a class="active" href="user.html">Your Account</a></li>
+    </ul>
+    <p>Please use your security to view and edit your account activity.</p>
+    <!--form-->
+    <form action="/user" method="GET">
+        <input type="text" name="token" placeholder="Security Code" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

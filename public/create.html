@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css">
+    <title>BarterPlace-create</title>
+</head>
+<body>
+    <!--navbar-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="create-user.html">Create Account</a></li>
+        <li><a href="login.html">Login to Account</a></li>
+        <li><a class="active" href="create.html">Create a post</a></li>
+        <li><a href="view.html">View Posts</a></li>
+        <li><a href="user.html">Your Account</a></li>
+    </ul>
+    <p>Please enter information about the item you are trading or seeking.</p>
+    <!--form-->
+    <form action="/createPost" method="POST">
+        <input type="text" name="token" placeholder="Security Code" required>
+        <input type="text" name="itemName" placeholder="Item Name" required>
+        <textarea name="itemDescription" placeholder="Item Description"></textarea>
+        <label for="itemCategory">Choose an Item Category</label>
+        <select id="itemCategory" name="itemCategory">
+            <option value="Motor Vehicles">Motor Vehicles</option>
+            <option value="Other Vehicles">Other Vehicles</option>
+            <option value="Computers, Tablets, Phones">Computers, Tablets, Phones</option>
+            <option value="Electronic Accessories">Electronic Accessories</option>
+            <option value="Speakers and Headphones">Speakers and Headphones</option>
+            <option value="Video Games and Consoles">Video Games and Consoles</option>
+            <option value="Cameras and Photography equipment">Cameras and Photography equipment</option>
+            <option value="Other Electronics">Other Electronics</option>
+            <option value="Trading Cards">Trading Cards</option>
+            <option value="Collectibles">Collectibles</option>
+            <option value="Coins and Paper Money">Coins and Paper Money</option>
+            <option value="Sports Memorabilia">Sports Memorabilia</option>
+            <option value="Men's Clothing">Men's Clothing</option>
+            <option value="Women's Clothing">Women's Clothing</option>
+            <option value="Children's Clothing">Children's Clothing</option>
+            <option value="Handbags and Accessories">Handbags and Accessories</option>
+            <option value="Jewelry and Watches">Jewelry and Watches</option>
+            <option value="Yard, Garden, and Outdoor Home">Yard, Garden, and Outdoor Home</option>
+            <option value="Tools and Workshop Equipment">Tools and Workshop Equipment</option>
+            <option value="Hunting and Fishing Equipment">Hunting and Fishing Equipment</option>
+            <option value="Outdoor Sports Equipment">Outdoor Sports Equipment</option>
+            <option value="Indoor Sports Equipment">Indoor Sports Equipment</option>
+            <option value="Running and Cycling Equipment">Running and Cycling Equipment</option>
+            <option value="Books, Movies and Music">Books, Movies and Music</option>
+            <option value="Toys and Hobbies">Toys and Hobbies</option>
+            <option value="Health and Beauty">Health and Beauty</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Food Products">Food Products</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="postType">are you trading the item or in search of it?</label>
+        <select id="postType" name="postType">
+            <option value="trading">I am trading the item</option>
+            <option value="ISO"> I am in search of the item</option>
+        </select>
+        <button type="submit">Create an Item Post</button>
+    </form>
+</body>
+</html>
