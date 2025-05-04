@@ -17,7 +17,12 @@ in your web browser go to http://localhost:3000 to use the application.
 
 #using the application 
 users should initially create an account at http://localhost:3000/create-user.html this will add their account to the database and allow them to recieve security codes. 
-once a user account is created, the user should go to http://localhost:3000/login.html and enter their username and password. they will recieve a security code allowing them to use the applications write and view functions.
-to create a post, the user should http://localhost:3000/create.html and fill out the form. note that a security code is necessary to submit succesfully/ 
+
+once a user account is created, the user should go to http://localhost:3000/login.html and enter their username and password. they will recieve a security code allowing them to use the 
+applications write and view functions.
+
+to create a post, the user should http://localhost:3000/create.html and fill out the form. note that a security code is necessary to submit succesfully
+
 to view their own posts. the user should go to http://localhost:3000/user.html and enter their security code. 
+
 to view all, or filtered posts, the user should go to http://localhost:3000/view.html and enter their security code along with any filters they wish. 
